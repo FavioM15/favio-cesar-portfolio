@@ -1,0 +1,861 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background:
+        radial-gradient(circle at top, rgba(255,180,80,0.08), transparent 30%),
+        linear-gradient(180deg, #050505, #0a0a0a, #111111);
+
+    color: white;
+
+    font-family: 'Orbitron', sans-serif;
+
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background: rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 999;
+}
+
+.logo {
+
+    font-size: 28px;
+    font-weight: 900;
+
+    color: #ffcc70;
+
+    text-shadow: 0 0 10px #ffcc70;
+}
+
+.navbar ul {
+
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.navbar a {
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+
+    color: #ffcc70;
+
+    text-shadow: 0 0 10px #ffcc70;
+}
+
+/* HERO */
+
+.hero {
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 100px 60px;
+
+    position: relative;
+}
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #ffcc70,
+            transparent
+        );
+
+    top: 120px;
+    left: 80px;
+
+    box-shadow: 0 0 15px #ffcc70;
+}
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 2px;
+    height: 300px;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            #ffcc70,
+            transparent
+        );
+
+    right: 120px;
+    top: 200px;
+
+    box-shadow: 0 0 15px #ffcc70;
+}
+
+.hero-text {
+
+    max-width: 700px;
+}
+
+.hero-text h1 {
+
+    font-size: 68px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    color: #2b1700;
+
+    padding: 20px 35px;
+
+    border: 4px solid #ffcc70;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffe6a3 0%,
+            #ffbf47 20%,
+            #8a4d00 55%,
+            #2b1700 100%
+        );
+
+    box-shadow:
+        0 0 10px #ffcc70,
+        0 0 20px rgba(255, 200, 100, 0.8),
+        inset 0 0 10px rgba(255,255,255,0.5),
+        inset 0 0 25px rgba(0,0,0,0.7);
+
+    text-shadow:
+        2px 2px 0 #000,
+        0 0 10px rgba(255,220,120,0.8);
+
+    display: inline-block;
+
+    margin-bottom: 30px;
+}
+
+.hero-text h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+}
+
+.subtitle {
+
+    font-size: 22px;
+
+    color: #ffcc70;
+
+    margin-bottom: 10px;
+}
+
+.location {
+
+    color: #aaaaaa;
+
+    margin-bottom: 20px;
+}
+
+/* TAGS */
+
+.hero-tags {
+
+    display: flex;
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 30px;
+}
+
+.hero-tags span {
+
+    padding: 10px 18px;
+
+    border: 1px solid rgba(255,204,112,0.5);
+
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.04);
+
+    font-size: 14px;
+
+    color: #ffcc70;
+
+    box-shadow:
+        0 0 15px rgba(255,204,112,0.15);
+}
+
+.jeff {
+
+    width: 360px;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255,180,80,0.7))
+        drop-shadow(0 0 25px rgba(255,180,80,0.4));
+
+    animation: flotar 3s ease-in-out infinite;
+}
+
+/* BUTTON */
+
+button {
+
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ffcc70;
+
+    color: black;
+
+    font-family: 'Orbitron', sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.08);
+
+    box-shadow: 0 0 20px #ffcc70;
+}
+
+/* ABOUT */
+
+.about {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+
+    padding: 120px 60px;
+}
+
+.perfil {
+
+    width: 300px;
+
+    border-radius: 20px;
+
+    border: 3px solid #ffcc70;
+
+    box-shadow:
+        0 0 20px rgba(255,200,100,0.5);
+
+    transition: 0.3s;
+}
+
+.perfil:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 40px rgba(255,204,112,0.7);
+}
+
+.about-text {
+
+    max-width: 700px;
+}
+
+.about-text h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+
+    color: #ffcc70;
+}
+
+.about-text p {
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+    color: #dddddd;
+}
+
+/* STATS */
+
+.stats {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    padding: 80px 40px;
+}
+
+.card {
+
+    width: 220px;
+
+    padding: 30px;
+
+    border: 2px solid rgba(255,204,112,0.3);
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.03);
+
+    backdrop-filter: blur(8px);
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 25px rgba(255,204,112,0.5);
+}
+
+.card h3 {
+
+    color: #ffcc70;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+
+    font-size: 24px;
+}
+
+/* SKILLS */
+
+.skills {
+
+    padding: 100px 40px;
+
+    text-align: center;
+}
+
+.skills h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 50px;
+
+    color: #ffcc70;
+}
+
+.skills-container {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.skill-box {
+
+    padding: 18px 30px;
+
+    border: 2px solid #ffcc70;
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+
+    background: #ffcc70;
+
+    color: black;
+
+    transform: scale(1.08);
+}
+
+/* GAMES */
+
+.games-section {
+
+    padding: 120px 40px;
+
+    text-align: center;
+}
+
+.games-section h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 30px;
+
+    color: #ffcc70;
+}
+
+.game-title {
+
+    font-size: 34px;
+
+    margin-bottom: 40px;
+
+    color: white;
+}
+
+.games-content {
+
+    display: none;
+}
+
+/* MARVEL */
+
+.marvel-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.marvel-card {
+
+    width: 350px;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 2px solid rgba(255,204,112,0.2);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.4s;
+}
+
+.marvel-card:hover {
+
+    transform:
+        translateY(-10px)
+        rotateX(5deg);
+
+    box-shadow:
+        0 0 40px rgba(255,204,112,0.5);
+}
+
+.marvel-card img {
+
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+}
+
+.marvel-card h3 {
+
+    margin-top: 20px;
+
+    color: #ffcc70;
+}
+
+.marvel-card p {
+
+    padding: 20px;
+
+    color: #cccccc;
+}
+
+/* TERMINAL */
+
+.terminal-section {
+
+    padding: 120px 40px;
+
+    text-align: center;
+}
+
+.terminal-section h2 {
+
+    color: #00ff88;
+
+    margin-bottom: 40px;
+
+    font-size: 48px;
+}
+
+.terminal {
+
+    width: 80%;
+    max-width: 800px;
+
+    margin: auto;
+
+    background: #050505;
+
+    border: 2px solid #00ff88;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    text-align: left;
+
+    box-shadow:
+        0 0 25px rgba(0,255,136,0.3);
+
+    font-family: monospace;
+}
+
+.terminal p {
+
+    margin-bottom: 15px;
+
+    color: #00ff88;
+}
+
+/* MISSIONS */
+
+.missions {
+
+    padding: 120px 40px;
+
+    text-align: center;
+}
+
+.missions h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 50px;
+
+    color: #ffcc70;
+}
+
+.mission-list {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    align-items: center;
+}
+
+.mission {
+
+    width: 70%;
+
+    padding: 25px;
+
+    border-left: 5px solid #ffcc70;
+
+    background: rgba(255,255,255,0.03);
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.mission:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 25px rgba(255,204,112,0.4);
+}
+
+/* FOOTER */
+
+footer {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background: rgba(0,0,0,0.4);
+
+    border-top: 1px solid rgba(255,204,112,0.2);
+}
+
+footer h3 {
+
+    color: #ffcc70;
+
+    margin-bottom: 20px;
+}
+
+footer p {
+
+    margin-bottom: 10px;
+
+    color: #cccccc;
+}
+
+.socials {
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.socials a {
+
+    text-decoration: none;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.socials a:hover {
+
+    color: #ffcc70;
+
+    text-shadow:
+        0 0 10px #ffcc70;
+}
+
+/* ESTRELLAS */
+
+.stars,
+.stars2 {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+.stars {
+
+    background-image:
+        radial-gradient(white 1px, transparent 1px);
+
+    background-size: 50px 50px;
+
+    opacity: 0.15;
+
+    animation: moverEstrellas 120s linear infinite;
+}
+
+.stars2 {
+
+    background-image:
+        radial-gradient(#ffcc70 1px, transparent 1px);
+
+    background-size: 120px 120px;
+
+    opacity: 0.08;
+
+    animation: moverEstrellas2 180s linear infinite;
+}
+
+@keyframes moverEstrellas {
+
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-1000px);
+    }
+}
+
+@keyframes moverEstrellas2 {
+
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-1000px);
+    }
+}
+
+/* GLOW */
+
+.glow {
+
+    position: fixed;
+
+    width: 700px;
+    height: 700px;
+
+    background:
+        radial-gradient(circle,
+        rgba(255,180,80,0.15),
+        transparent 70%);
+
+    top: -200px;
+    right: -200px;
+
+    filter: blur(50px);
+
+    z-index: -1;
+}
+
+/* CURSOR */
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    width: 300px;
+    height: 300px;
+
+    background:
+        radial-gradient(circle,
+        rgba(255,204,112,0.08),
+        transparent 70%);
+
+    pointer-events: none;
+
+    z-index: 9999;
+
+    left: var(--x);
+    top: var(--y);
+
+    transform: translate(-50%, -50%);
+}
+
+/* ANIMACION */
+
+.hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: 0.8s;
+}
+
+.show {
+
+    opacity: 1;
+
+    transform: translateY(0px);
+}
+
+@keyframes flotar {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .hero,
+    .about {
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+
+        font-size: 42px;
+    }
+
+    .jeff {
+
+        width: 240px;
+    }
+
+    .perfil {
+
+        width: 220px;
+    }
+
+    .navbar {
+
+        padding: 15px 20px;
+    }
+
+    .navbar ul {
+
+        gap: 15px;
+    }
+}
