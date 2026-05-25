@@ -862,3 +862,162 @@ body::after {
         gap: 15px;
     }
 }
+/* COURSES */
+
+.courses {
+
+    padding: 120px 40px;
+
+    text-align: center;
+}
+
+.courses h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 50px;
+
+    color: #ffcc70;
+}
+
+.courses-container {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.course-card {
+
+    padding: 20px 28px;
+
+    border-radius: 16px;
+
+    border: 2px solid rgba(255,204,112,0.3);
+
+    background: rgba(255,255,255,0.03);
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+
+    transform: scale(1.05);
+
+    background: #ffcc70;
+
+    color: black;
+
+    box-shadow:
+        0 0 25px rgba(255,204,112,0.5);
+}
+
+/* FRIENDS */
+
+.friends {
+
+    padding: 120px 40px;
+
+    text-align: center;
+}
+
+.friends h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 50px;
+
+    color: #ffcc70;
+}
+
+.friends-container {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.friend-card {
+
+    padding: 25px 35px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.03);
+
+    border: 2px solid rgba(255,204,112,0.2);
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.friend-card:hover {
+
+    transform: translateY(-8px);
+
+    background: #ffcc70;
+
+    color: black;
+
+    box-shadow:
+        0 0 25px rgba(255,204,112,0.5);
+}
+
+/* TEACHERS */
+
+.teachers {
+
+    padding: 120px 40px;
+
+    text-align: center;
+}
+
+.teachers h2 {
+
+    font-size: 48px;
+
+    margin-bottom: 50px;
+
+    color: #00ff88;
+}
+
+.teachers-container {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.teacher-card {
+
+    padding: 25px 35px;
+
+    border-radius: 18px;
+
+    background: rgba(0,255,136,0.06);
+
+    border: 2px solid rgba(0,255,136,0.2);
+
+    color: #00ff88;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.teacher-card:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 25px rgba(0,255,136,0.4);
+}

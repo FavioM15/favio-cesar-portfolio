@@ -46,7 +46,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll(
-    ".card, .skill-box, .marvel-card, .mission"
+    ".card, .skill-box, .marvel-card, .mission, .course-card, .friend-card, .teacher-card"
 ).forEach((el) => {
 
     el.classList.add("hidden");
