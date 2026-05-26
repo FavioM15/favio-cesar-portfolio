@@ -4,55 +4,77 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Favio Cesar Mendigure Perochena</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Favio Cesar Mendigure Perochena
+    </title>
+
     <meta name="description"
-    content="Página personal de Favio Cesar Mendigure Perochena, estudiante de Ciencias de la Computación en la Universidad Católica San Pablo de Arequipa, Perú.">
+        content="Portfolio profesional de Favio Cesar Mendigure Perochena">
 
-    <meta name="keywords"
-    content="Favio Cesar Mendigure Perochena, Favio Mendigure, UCSP, Ciencias de la Computación, Arequipa, developer">
-
-    <meta name="author"
-    content="Favio Cesar Mendigure Perochena">
     <!-- FUENTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="style.css">
 
 </head>
 
 <body>
-
-    <!-- AUDIO -->
-
-    <audio id="bgmusic" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
-
-    <audio id="clicksound">
-        <source src="click.mp3" type="audio/mpeg">
-    </audio>
 
     <!-- NAVBAR -->
 
     <nav class="navbar">
 
         <div class="logo">
+
             FAVIO
+
         </div>
 
         <ul>
 
-            <li><a href="#about">Sobre mí</a></li>
-            <li><a href="#stats">Stats</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#courses">Cursos</a></li>
-            <li><a href="#friends">Amigos</a></li>
-            <li><a href="#teachers">Profesores</a></li>
+            <li>
+                <a href="#about">
+                    Sobre mí
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    Habilidades
+                </a>
+            </li>
+
+            <li>
+                <a href="#courses">
+                    Cursos
+                </a>
+            </li>
+
+            <li>
+                <a href="#friends">
+                    Compañeros
+                </a>
+            </li>
+
+            <li>
+                <a href="#teachers">
+                    Profesores
+                </a>
+            </li>
 
         </ul>
 
@@ -62,381 +84,459 @@
 
     <header class="hero">
 
-        <div class="hero-text">
+        <!-- FONDO UCSP -->
 
-            <h1>
-                Bienvenidos a mi página web
-            </h1>
+        <div class="hero-background"></div>
 
-            <h2>
-                Favio Cesar Mendigure Perochena
-            </h2>
+        <div class="hero-overlay"></div>
 
-            <p class="subtitle">
-                Computer Science Student
-            </p>
+        <div class="hero-content">
 
-            <p class="location">
-                UCSP • Arequipa, Perú
-            </p>
+            <div class="hero-text">
 
-            <div class="hero-tags">
+                <p class="hero-mini">
 
-                <span>MARVEL FAN</span>
-                <span>UBUNTU USER</span>
-                <span>CS STUDENT</span>
-                <span>DEVELOPER</span>
+                    COMPUTER SCIENCE PORTFOLIO
+
+                </p>
+
+                <h1>
+
+                    Favio Cesar
+                    Mendigure Perochena
+
+                </h1>
+
+                <p class="subtitle">
+
+                    Estudiante de Ciencias
+                    de la Computación
+
+                </p>
+
+                <p class="location">
+
+                    Universidad Católica San Pablo
+                    • Arequipa, Perú
+
+                </p>
+
+                <p class="hero-description">
+
+                    Estudiante apasionado por el
+                    desarrollo de software,
+                    tecnologías web, Linux
+                    y aprendizaje continuo.
+
+                </p>
+
+                <div class="hero-tags">
+
+                    <span>DEVELOPER</span>
+                    <span>C++</span>
+                    <span>PYTHON</span>
+                    <span>LINUX</span>
+                    <span>GITHUB</span>
+
+                </div>
+
+                <button id="contactBtn">
+
+                    Contactar
+
+                </button>
 
             </div>
 
-            <button id="boton">
-                INITIALIZE SYSTEM
-            </button>
+            <!-- FOTO -->
+
+            <img
+                src="favio.jpg"
+                alt="Favio"
+                class="perfil"
+            >
 
         </div>
 
-        <img
-            src="https://static.wikia.nocookie.net/marvel-rivals/images/d/de/Jeff_the_Land_Shark_Hero_Portrait.png/revision/latest?cb=20240819162642"
-            alt="Jeff"
-            class="jeff"
-        >
-
     </header>
 
-    <!-- SOBRE MI -->
+    <!-- ABOUT -->
 
-    <section class="about" id="about">
+    <section
+        class="about"
+        id="about">
 
-        <img
-            src="favio.jpg"
-            alt="Foto de Favio"
-            class="perfil"
-        >
+        <div class="about-card hidden">
 
-        <div class="about-text">
+            <div class="about-image">
 
-            <h2>Perfil</h2>
+                <img
+                    src="https://ucsp.edu.pe/wp-content/uploads/2023/08/universidad-catolica-san-pablo-1.jpg"
+                    alt="UCSP"
+                >
 
-            <p>
-                Soy estudiante de Ciencias de la Computación en la
-                Universidad Católica San Pablo.
-            </p>
+            </div>
 
-            <p>
-                Me apasiona la programación, la tecnología,
-                los videojuegos y el desarrollo de proyectos.
-            </p>
+            <div class="about-text">
+
+                <h2>
+
+                    Sobre mí
+
+                </h2>
+
+                <p>
+
+                    Soy estudiante de Ciencias
+                    de la Computación en la
+                    Universidad Católica San Pablo,
+                    ubicada en Arequipa, Perú.
+
+                </p>
+
+                <p>
+
+                    Tengo interés en el desarrollo
+                    de software, tecnologías web,
+                    programación y sistemas Linux.
+
+                </p>
+
+                <p>
+
+                    Actualmente continúo fortaleciendo
+                    mis habilidades mediante proyectos
+                    personales y aprendizaje continuo.
+
+                </p>
+
+                <p>
+
+                    Me considero una persona responsable,
+                    creativa y con gran interés
+                    en resolver problemas utilizando
+                    tecnología.
+
+                </p>
+
+            </div>
 
         </div>
 
     </section>
 
-    <!-- STATS -->
+    <!-- PERFIL -->
 
-    <section class="stats" id="stats">
+    <section class="experience">
 
-        <div class="card">
-            <h3>Edad</h3>
-            <p>19</p>
-        </div>
+        <div class="experience-card hidden">
 
-        <div class="card">
-            <h3>Ciudad</h3>
-            <p>Arequipa</p>
-        </div>
+            <h2>
 
-        <div class="card">
-            <h3>Universidad</h3>
-            <p>UCSP</p>
-        </div>
+                Perfil Profesional
 
-        <div class="card">
-            <h3>Meta</h3>
-            <p>Developer</p>
+            </h2>
+
+            <ul>
+
+                <li>
+                    Conocimientos en HTML,
+                    CSS y JavaScript.
+                </li>
+
+                <li>
+                    Manejo de Git y GitHub.
+                </li>
+
+                <li>
+                    Experiencia utilizando Linux / Ubuntu.
+                </li>
+
+                <li>
+                    Programación en C++ y Python.
+                </li>
+
+                <li>
+                    Desarrollo de proyectos web personales.
+                </li>
+
+                <li>
+                    Interés en desarrollo de software
+                    y aprendizaje continuo.
+                </li>
+
+            </ul>
+
         </div>
 
     </section>
 
     <!-- SKILLS -->
 
-    <section class="skills" id="skills">
+    <section
+        class="skills"
+        id="skills">
 
-        <h2>Skills</h2>
+        <h2 class="hidden">
+
+            Habilidades Técnicas
+
+        </h2>
 
         <div class="skills-container">
 
-            <div class="skill-box">
+            <div class="skill-box hidden">
                 Programación
             </div>
 
-            <div class="skill-box">
-                Linux
+            <div class="skill-box hidden">
+                Desarrollo Web
             </div>
 
-            <div class="skill-box">
-                Git
+            <div class="skill-box hidden">
+                Git y GitHub
             </div>
 
-            <div class="skill-box">
-                Web Development
+            <div class="skill-box hidden">
+                Linux / Ubuntu
             </div>
 
-            <div class="skill-box">
-                Problem Solving
+            <div class="skill-box hidden">
+                C++
             </div>
 
-            <div class="skill-box">
-                Tecnología
+            <div class="skill-box hidden">
+                Python
             </div>
 
         </div>
 
     </section>
+
     <!-- CURSOS -->
 
-    <section class="courses" id="courses">
+    <section
+        class="courses"
+        id="courses">
 
-        <h2>
-            Cursos
+        <h2 class="hidden">
+
+            Cursos Llevados
+
         </h2>
 
         <div class="courses-container">
 
-            <div class="course-card">
+            <div class="course-card hidden">
+
                 Fundamentos de la Programación
+
             </div>
 
-            <div class="course-card">
+            <div class="course-card hidden">
+
                 Introducción a la Computación
+
             </div>
 
-            <div class="course-card">
-                Fundamentos Matemáticos para Computación
+            <div class="course-card hidden">
+
+                Fundamentos Matemáticos
+                para Computación
+
             </div>
 
-            <div class="course-card">
+            <div class="course-card hidden">
+
                 Lógica
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- FAVORITE GAMES -->
-
-    <section class="games-section">
-
-        <h2>Favorite Games</h2>
-
-        <button id="gamesButton">
-            ACTIVATE DATABASE
-        </button>
-
-        <div class="games-content">
-
-            <div class="game-title">
-                Marvel Rivals
-            </div>
-
-            <div class="marvel-container">
-
-                <div class="marvel-card">
-
-                    <img
-                        src="https://r.res.easebar.com/pic/20251010/65659354-ee86-4964-8f19-8bfa939b26f8.png"
-                        alt="Jeff"
-                    >
-
-                    <h3>Jeff The Land Shark</h3>
-
-                    <p>
-                        Favorite Marvel Rivals character.
-                        Small shark. Massive chaos.
-                    </p>
-
-                </div>
-
-                <div class="marvel-card">
-
-                    <img
-                        src="https://static.wikia.nocookie.net/marvel-rivals/images/e/e7/Star_lord_prestige.png/revision/latest?cb=20250118093921"
-                        alt="Star Lord"
-                    >
-
-                    <h3>Star-Lord</h3>
-
-                    <p>
-                        Legendary cosmic outlaw and leader
-                        of the Guardians.
-                    </p>
-
-                </div>
 
             </div>
 
         </div>
 
     </section>
-<!-- AMIGOS -->
 
-    <section class="friends" id="friends">
+    <!-- FRIENDS -->
 
-        <h2>
-            Mis Amigos
+    <section
+        class="friends"
+        id="friends">
+
+        <h2 class="hidden">
+
+            Compañeros y Colaboradores
+
         </h2>
 
         <div class="friends-container">
 
             <a
-                href="https://maca-placeholder.github.io"
+                href="https://faviom15.github.io/maca/"
                 target="_blank"
-                class="friend-card"
+                class="friend-card hidden"
             >
-                Macarena
+
+                Macarena Rodriguez
+
             </a>
 
             <a
-                href="https://eros-placeholder.github.io"
-                target="_blank"
-                class="friend-card"
+                href="#"
+                class="friend-card hidden"
             >
+
                 Eros Caldenhoven
+
             </a>
 
             <a
-                href="https://joaquin-placeholder.github.io"
-                target="_blank"
-                class="friend-card"
+                href="#"
+                class="friend-card hidden"
             >
+
                 Joaquin Calle
+
             </a>
 
             <a
-                href="https://jaime-placeholder.github.io"
-                target="_blank"
-                class="friend-card"
+                href="#"
+                class="friend-card hidden"
             >
+
                 Jaime Andres
+
             </a>
 
         </div>
 
     </section>
-    <!-- TERMINAL -->
 
-    <section class="terminal-section">
+    <!-- TEACHERS -->
 
-        <h2>System Configuration</h2>
+    <section
+        class="teachers"
+        id="teachers">
 
-        <div class="terminal">
+        <h2 class="hidden">
 
-            <p>> OS: Ubuntu Linux</p>
-            <p>> Editor: VS Code</p>
-            <p>> Browsers: Firefox / Opera GX</p>
-            <p>> Learning: Web Development</p>
-            <p>> Status: ONLINE</p>
-
-        </div>
-
-    </section>
-
-    <!-- MISSIONS -->
-
-    <section class="missions">
-
-        <h2>Current Missions</h2>
-
-        <div class="mission-list">
-
-            <div class="mission">
-                Complete Computer Science degree
-            </div>
-
-            <div class="mission">
-                Become Full Stack Developer
-            </div>
-
-            <div class="mission">
-                Build creative projects
-            </div>
-
-            <div class="mission">
-                Learn advanced technologies
-            </div>
-
-            <div class="mission">
-                Continue improving every day
-            </div>
-
-        </div>
-
-    </section>
-    <!-- PROFESORES -->
-
-    <section class="teachers" id="teachers">
-
-        <h2>
             Profesores
+
         </h2>
 
         <div class="teachers-container">
 
             <a
-                href="#"
+                href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/"
                 target="_blank"
-                class="teacher-card"
+                class="teacher-card hidden"
             >
-                Profesor 1
+
+                Fundamentos de Programación
+                <br><br>
+                Vizconde La Motta Kelly
+
             </a>
 
             <a
-                href="#"
+                href="https://www.linkedin.com/in/fiorella-maría-rendón-garcía-7aa9b7374/"
                 target="_blank"
-                class="teacher-card"
+                class="teacher-card hidden"
             >
-                Profesor 2
+
+                Fundamentos Matemáticos
+                para Computación
+                <br><br>
+                Rendón García Fiorella María
+
             </a>
 
             <a
-                href="#"
+                href="https://www.linkedin.com/in/ecuadrosv/"
                 target="_blank"
-                class="teacher-card"
+                class="teacher-card hidden"
             >
-                Profesor 3
+
+                Introducción a la Computación
+                <br><br>
+                Cuadros Vargas Ernesto
+
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/solange-tejada/"
+                target="_blank"
+                class="teacher-card hidden"
+            >
+
+                Lógica
+                <br><br>
+                Tejada Cuadros Solange Ximena
+
             </a>
 
         </div>
 
     </section>
+
     <!-- FOOTER -->
 
     <footer>
 
-        <h3>Favio Cesar Mendigure Perochena</h3>
+        <h3>
+
+            Favio Cesar Mendigure Perochena
+
+        </h3>
 
         <p>
-            favio.mendigure@ucsp.edu.pe
+            📍 Arequipa, Perú
         </p>
 
         <p>
-            Arequipa, Perú © 2026
+            📧 favio.mendigure@ucsp.edu.pe
+        </p>
+
+        <p>
+            📧 favio.mendigure15@gmail.com
+        </p>
+
+        <p>
+            📱 923656363
         </p>
 
         <div class="socials">
 
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
+            <a
+                href="https://github.com/FavioM15"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/favio-mendigure-2560223b9/"
+                target="_blank"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                href="https://www.instagram.com/f.perochena/?hl=en"
+                target="_blank"
+            >
+                Instagram
+            </a>
 
         </div>
 
     </footer>
 
-    <!-- EFECTOS -->
+    <!-- ESTRELLAS -->
 
     <div class="stars"></div>
     <div class="stars2"></div>
-    <div class="glow"></div>
+
+    <!-- SCRIPT -->
 
     <script src="script.js"></script>
 

@@ -1,74 +1,45 @@
-const boton = document.getElementById("boton");
+/* CONTACT BUTTON */
 
-const music = document.getElementById("bgmusic");
-const click = document.getElementById("clicksound");
+const contactBtn =
+    document.getElementById("contactBtn");
 
-/* BOTON PRINCIPAL */
+contactBtn.addEventListener("click", () => {
 
-boton.addEventListener("click", () => {
+    window.open(
+        "https://www.linkedin.com/in/favio-mendigure-2560223b9/",
+        "_blank"
+    );
 
-    click.play();
+});
 
-    music.volume = 0.3;
+/* SCROLL ANIMATION */
 
-    music.play();
+const observer =
+    new IntersectionObserver((entries) => {
 
-    document.querySelector("#about")
-        .scrollIntoView({
-            behavior: "smooth"
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            } else {
+
+                entry.target.classList.remove("show");
+
+            }
+
         });
 
-});
+    }, {
 
-/* CURSOR GLOW */
-
-document.addEventListener("mousemove", (e) => {
-
-    document.body.style.setProperty("--x", e.clientX + "px");
-    document.body.style.setProperty("--y", e.clientY + "px");
-
-});
-
-/* APARICION */
-
-const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach((entry) => {
-
-        if (entry.isIntersecting) {
-
-            entry.target.classList.add("show");
-
-        }
+        threshold: 0.15
 
     });
 
-});
+document.querySelectorAll(".hidden")
+    .forEach((el) => {
 
-document.querySelectorAll(
-    ".card, .skill-box, .marvel-card, .mission, .course-card, .friend-card, .teacher-card"
-).forEach((el) => {
+        observer.observe(el);
 
-    el.classList.add("hidden");
-
-    observer.observe(el);
-
-});
-
-/* GAMES BUTTON */
-
-const gamesButton =
-    document.getElementById("gamesButton");
-
-const gamesContent =
-    document.querySelector(".games-content");
-
-gamesButton.addEventListener("click", () => {
-
-    gamesContent.style.display = "block";
-
-    gamesContent.scrollIntoView({
-        behavior: "smooth"
     });
-
-});
