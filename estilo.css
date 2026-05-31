@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+.hero{
+    background-image:url("https://ucsp.edu.pe/wp-content/uploads/2023/08/universidad-catolica-san-pablo-1.jpg");
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:80px 20px;
+    color:white;
+}
+
+.hero-content{
+    background-color:rgba(0,0,0,0.65);
+    display:inline-block;
+    padding:30px;
+    border-radius:10px;
+}
+
+.perfil{
+    width:220px;
+    border-radius:50%;
+    margin-top:20px;
+    border:3px solid white;
+}
+
+section{
+    width:80%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.about-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#0066cc;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:white;
+}
+
+p{
+    margin-bottom:10px;
+}
+
+.about-card p{
+    text-align:justify;
+}
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+a{
+    color:#0066cc;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
